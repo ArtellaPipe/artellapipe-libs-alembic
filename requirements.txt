@@ -1,0 +1,12 @@
+# ===================================================================
+# artellapipe-libs-drive requirements file
+# ===================================================================
+gspread
+oauth2client
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx_rtd_theme
+tpPyUtils
+artellapipe
