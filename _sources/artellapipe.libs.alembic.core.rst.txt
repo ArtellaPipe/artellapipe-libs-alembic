@@ -1,0 +1,17 @@
+artellapipe.libs.alembic.core package
+=====================================
+
+Submodules
+----------
+
+.. toctree::
+
+   artellapipe.libs.alembic.core.alembic
+
+Module contents
+---------------
+
+.. automodule:: artellapipe.libs.alembic.core
+   :members:
+   :undoc-members:
+   :show-inheritance:

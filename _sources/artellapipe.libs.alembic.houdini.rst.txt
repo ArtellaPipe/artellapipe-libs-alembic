@@ -1,0 +1,17 @@
+artellapipe.libs.alembic.houdini package
+========================================
+
+Submodules
+----------
+
+.. toctree::
+
+   artellapipe.libs.alembic.houdini.alembic
+
+Module contents
+---------------
+
+.. automodule:: artellapipe.libs.alembic.houdini
+   :members:
+   :undoc-members:
+   :show-inheritance:

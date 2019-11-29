@@ -1,0 +1,7 @@
+artellapipe.libs.alembic.core.alembic module
+============================================
+
+.. automodule:: artellapipe.libs.alembic.core.alembic
+   :members:
+   :undoc-members:
+   :show-inheritance:

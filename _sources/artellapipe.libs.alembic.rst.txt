@@ -1,6 +1,15 @@
 artellapipe.libs.alembic package
 ================================
 
+Subpackages
+-----------
+
+.. toctree::
+
+   artellapipe.libs.alembic.core
+   artellapipe.libs.alembic.houdini
+   artellapipe.libs.alembic.maya
+
 Module contents
 ---------------
 

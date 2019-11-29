@@ -1,0 +1,17 @@
+artellapipe.libs.alembic.maya package
+=====================================
+
+Submodules
+----------
+
+.. toctree::
+
+   artellapipe.libs.alembic.maya.alembic
+
+Module contents
+---------------
+
+.. automodule:: artellapipe.libs.alembic.maya
+   :members:
+   :undoc-members:
+   :show-inheritance:
