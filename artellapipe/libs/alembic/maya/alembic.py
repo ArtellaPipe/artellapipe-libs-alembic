@@ -88,14 +88,14 @@ class MayaAlembic(alembic.AbstractAlembic):
         :param renderable_only: Non-renderable hierarchy (invisible, or template) will not be written out.
             Defaults to False.
         :type renderable_only: bool, optional
-        :param selection: Write out all all selected nodes from the active selection list that are descendents of the roots
-            specified with -root. Defaults to False.
+        :param selection: Write out all all selected nodes from the active selection list that are descendents of the
+            roots specified with -root. Defaults to False.
         :type selection: bool, optional
-        :param uv_write: Uv data for PolyMesh and SubD shapes will be written to the Alembic file. Only the current uv map
-            is used. Defaults to False.
+        :param uv_write: Uv data for PolyMesh and SubD shapes will be written to the Alembic file. Only the current uv
+            map is used. Defaults to False.
         :type selection: bool, optional
-        :param write_color_sets: Write all color sets on MFnMeshes as color 3 or color 4 indexed geometry parameters with
-            face varying scope. Defaults to False.
+        :param write_color_sets: Write all color sets on MFnMeshes as color 3 or color 4 indexed geometry parameters
+            with face varying scope. Defaults to False.
         :type write_color_sets: bool, optional
         :param write_face_sets: Write all Face sets on MFnMeshes. Defaults to False.
         :type write_face_sets: bool, optional
@@ -111,11 +111,12 @@ class MayaAlembic(alembic.AbstractAlembic):
             scope. Defaults to False.
         :type write_uv_sets: bool, optional
         :param write_creases: If the mesh has crease edges or crease vertices, the mesh (OPolyMesh) would
-            now be written out as an OSubD and crease info will be stored in the Alembic file. Otherwise, creases info won't
-            be preserved in Alembic file unless a custom Boolean attribute SubDivisionMesh has been added to mesh node and
-            its value is true. Defaults to False.
+            now be written out as an OSubD and crease info will be stored in the Alembic file. Otherwise, creases info
+            won't be preserved in Alembic file unless a custom Boolean attribute SubDivisionMesh has been added to mesh
+             node and its value is true. Defaults to False.
         :type write_creases: bool, optional
-        :param data_format: The data format to use to write the file. Can be either "HDF" or "Ogawa". Defaults to "Ogawa".
+        :param data_format: The data format to use to write the file. Can be either "HDF" or "Ogawa". Defaults to
+            "Ogawa".
         :type write_creases: str, optional
         :param step:  The time interval (expressed in frames) at which the frame range is sampled.
             Additional samples around each frame can be specified with -frs. Defaults to 1.0.
@@ -143,21 +144,23 @@ class MayaAlembic(alembic.AbstractAlembic):
         :param root: Maya dag path which will be parented to the root of the Alembic file. Defaults
             to [], which means the entire scene will be written out.
         :type root: list(str), optional
-        :param frame_relative_sample: Frame relative sample that will be written out along the frame range. Defaults to [].
+        :param frame_relative_sample: Frame relative sample that will be written out along the frame range. Defaults to
+            [].
         :type frame_relative_sample: list(float), optional
         :param frame_range: The frame range to write. Each list of two floats defines a new frame range. step or
             frameRelativeSample will affect the current frame range only.
         :type frame_range: list(list(float, float), optional
         :param strip_namespaces: Namespaces will be stripped off of the node before being written to Alembic.
-            The int specifies how many namespaces will be stripped off of the node name. Be careful that the new stripped
-            name does not collide with other sibling node names. Defaults to -1, which means namespaces will be preserved.
+            The int specifies how many namespaces will be stripped off of the node name. Be careful that the new
+            stripped name does not collide with other sibling node names. Defaults to -1, which means namespaces will
+            be preserved.
         :type strip_namespaces: int, optional
         .. tip::
             taco:foo:bar would be written as just bar with stripNamespaces=0
 
             taco:foo:bar would be written as foo:bar with stripNamespaces=1
-        :param bool, optional dont_skip_unwritten_frames: When evaluating multiple translate jobs, this decides whether to
-            evaluate frames between jobs when there is a gap in their frame ranges. Defaults to False.
+        :param bool, optional dont_skip_unwritten_frames: When evaluating multiple translate jobs, this decides whether
+            to evaluate frames between jobs when there is a gap in their frame ranges. Defaults to False.
         :param bool, optional verbose: Prints the current frame that is being evaluated. Defaults to False.
         :param float, optional pre_roll_start_frame: The frame to start scene evaluation at.  This is used to set the
             starting frame for time dependent translations and can be used to evaluate run-up that isn't actually
