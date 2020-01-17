@@ -282,7 +282,7 @@ In Python: [minX, minY, minZ, maxX, maxY, maxZ]</p>
 
 <dl class="method">
 <dt id="artellapipe.libs.alembic.maya.alembic.MayaAlembic.import_alembic">
-<code class="sig-name descname">import_alembic</code><span class="sig-paren">(</span><em class="sig-param">alembic_file</em>, <em class="sig-param">mode='import'</em>, <em class="sig-param">nodes=None</em>, <em class="sig-param">parent=None</em>, <em class="sig-param">fix_path=False</em>, <em class="sig-param">namespace=None</em>, <em class="sig-param">reference=False</em>, <em class="sig-param">as_gpu_cache=True</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.maya.alembic.MayaAlembic.import_alembic" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">import_alembic</code><span class="sig-paren">(</span><em class="sig-param">alembic_file</em>, <em class="sig-param">mode='import'</em>, <em class="sig-param">nodes=None</em>, <em class="sig-param">parent=None</em>, <em class="sig-param">fix_path=False</em>, <em class="sig-param">namespace=None</em>, <em class="sig-param">reference=False</em>, <em class="sig-param">as_gpu_cache=True</em>, <em class="sig-param">unique_namespace=True</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.maya.alembic.MayaAlembic.import_alembic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Imports Alembic into current DCC scene</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -296,6 +296,7 @@ In Python: [minX, minY, minZ, maxX, maxY, maxZ]</p>
 <li><p><strong>namespace</strong> – str</p></li>
 <li><p><strong>reference</strong> – bool</p></li>
 <li><p><strong>as_gpu_cache</strong> – bool</p></li>
+<li><p><strong>unique_namespace</strong> – bool</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
