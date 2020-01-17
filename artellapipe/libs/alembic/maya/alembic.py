@@ -291,7 +291,7 @@ class MayaAlembic(alembic.AbstractAlembic):
         return abc_exists
 
     def import_alembic(self, alembic_file, mode='import', nodes=None, parent=None, fix_path=False,
-                       namespace=None, reference=False, as_gpu_cache=True):
+                       namespace=None, reference=False, as_gpu_cache=True, unique_namespace=True):
         """
         Imports Alembic into current DCC scene
 
@@ -304,6 +304,7 @@ class MayaAlembic(alembic.AbstractAlembic):
         :param namespace: str
         :param reference: bool
         :param as_gpu_cache: bool
+        :param unique_namespace: bool
         :return:
         """
 
@@ -330,7 +331,7 @@ class MayaAlembic(alembic.AbstractAlembic):
                 abc_file = alembic_file
 
             if as_gpu_cache:
-                res = geometrycache.import_gpu_cache(abc_file, namespace=namespace)
+                res = geometrycache.import_gpu_cache(abc_file, namespace=namespace, unique_namespace=unique_namespace)
             else:
                 if reference:
                     if namespace:
