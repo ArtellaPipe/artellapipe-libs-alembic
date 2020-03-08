@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -181,13 +181,13 @@
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="method">
 <dt id="artellapipe.libs.alembic.core.alembic.AbstractAlembic.export_alembic">
-<code class="sig-name descname">export_alembic</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.export_alembic" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">export_alembic</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.export_alembic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exports Alembic file with given attributes</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="artellapipe.libs.alembic.core.alembic.AbstractAlembic.import_alembic">
-<code class="sig-name descname">import_alembic</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.import_alembic" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">import_alembic</code><span class="sig-paren">(</span><em class="sig-param">alembic_file</em>, <em class="sig-param">mode='import'</em>, <em class="sig-param">nodes=None</em>, <em class="sig-param">parent=None</em>, <em class="sig-param">fix_path=False</em>, <em class="sig-param">namespace=None</em>, <em class="sig-param">reference=False</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.import_alembic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Imports Alembic into current DCC scene</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -209,10 +209,16 @@
 
 <dl class="method">
 <dt id="artellapipe.libs.alembic.core.alembic.AbstractAlembic.load_alembic_plugin">
-<code class="sig-name descname">load_alembic_plugin</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.load_alembic_plugin" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">load_alembic_plugin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic.load_alembic_plugin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Forces the loading of the Alembic plugin if it is not already loaded</p>
 </dd></dl>
 
+</dd></dl>
+
+<dl class="class">
+<dt id="artellapipe.libs.alembic.core.alembic.AbstractAlembicSingleton">
+<em class="property">class </em><code class="sig-prename descclassname">artellapipe.libs.alembic.core.alembic.</code><code class="sig-name descname">AbstractAlembicSingleton</code><a class="headerlink" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembicSingleton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#artellapipe.libs.alembic.core.alembic.AbstractAlembic" title="artellapipe.libs.alembic.core.alembic.AbstractAlembic"><code class="xref py py-class docutils literal notranslate"><span class="pre">artellapipe.libs.alembic.core.alembic.AbstractAlembic</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 </dd></dl>
 
 </div>
