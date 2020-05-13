@@ -40,6 +40,8 @@ class MayaAlembic(alembic.AbstractAlembic):
             tp.Dcc.load_plugin('AbcExport.mll')
         if not tp.Dcc.is_plugin_loaded('AbcImport.mll'):
             tp.Dcc.load_plugin('AbcImport.mll')
+        if not tp.Dcc.is_plugin_loaded('gpuCache.mll'):
+            tp.Dcc.load_plugin('gpuCache.mll')
 
     # (too-many-branches)  pylint: disable=R0912
     # (too_many_arguments) pylint: disable=R0913
