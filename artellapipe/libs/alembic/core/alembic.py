@@ -14,8 +14,6 @@ __email__ = "tpovedatd@gmail.com"
 
 from tpDcc.libs.python import decorators
 
-import artellapipe.register
-
 
 class AbstractAlembic(object):
 
@@ -57,10 +55,3 @@ class AbstractAlembic(object):
             'import_alembic function for "{}" is not implemented!'.format(self.__class__.__name__))
 
 
-@decorators.Singleton
-class AbstractAlembicSingleton(AbstractAlembic, object):
-    def __init__(self):
-        AbstractAlembic.__init__(self)
-
-
-artellapipe.register.register_class('Alembic', AbstractAlembicSingleton)

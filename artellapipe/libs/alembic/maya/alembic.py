@@ -16,7 +16,6 @@ import os
 import logging
 
 import tpDcc as tp
-from tpDcc.libs.python import decorators
 
 if tp.is_maya():
     import tpDcc.dccs.maya as maya
@@ -26,7 +25,7 @@ import artellapipe.register
 from artellapipe.utils import exceptions
 from artellapipe.libs.alembic.core import alembic
 
-LOGGER = logging.getLogger()
+LOGGER = logging.getLogger('artellapipe-libs-alembic')
 
 
 class MayaAlembic(alembic.AbstractAlembic):
@@ -358,12 +357,3 @@ class MayaAlembic(alembic.AbstractAlembic):
             LOGGER.info('Alembic File %s imported successfully!', os.path.basename(alembic_file))
 
         return res
-
-
-@decorators.Singleton
-class MayaAlembicSingleton(MayaAlembic, object):
-    def __init__(self):
-        MayaAlembic.__init__(self)
-
-
-artellapipe.register.register_class('Alembic', MayaAlembicSingleton)

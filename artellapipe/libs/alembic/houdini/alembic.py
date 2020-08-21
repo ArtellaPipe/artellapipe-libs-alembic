@@ -16,13 +16,12 @@ import os
 import logging
 
 import tpDcc as tp
-from tpDcc.libs.python import decorators
 
 import artellapipe.register
 from artellapipe.utils import exceptions
 from artellapipe.libs.alembic.core import alembic
 
-LOGGER = logging.getLogger()
+LOGGER = logging.getLogger('artellapipe-libs-alembic')
 
 
 class HoudiniAlembic(alembic.AbstractAlembic):
@@ -73,12 +72,3 @@ class HoudiniAlembic(alembic.AbstractAlembic):
 
         LOGGER.debug('Alembic File %s imported successfully!', os.path.basename(alembic_file))
         return res
-
-
-@decorators.Singleton
-class HoudiniAlembicSingleton(HoudiniAlembic, object):
-    def __init__(self):
-        HoudiniAlembic.__init__(self)
-
-
-artellapipe.register.register_class('Alembic', HoudiniAlembicSingleton)
