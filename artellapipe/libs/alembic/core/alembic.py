@@ -53,5 +53,3 @@ class AbstractAlembic(object):
 
         raise NotImplementedError(
             'import_alembic function for "{}" is not implemented!'.format(self.__class__.__name__))
-
-
