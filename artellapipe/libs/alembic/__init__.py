@@ -25,7 +25,7 @@ def init(*args, **kwargs):
     LOGGER.info('Initializing Alembic libraries ...')
 
     try:
-        from artella.libs.alembic.core import alembic
+        from artellapipe.libs.alembic.core import alembic
         artellapipe.register.register_class('Alembic', alembic.AbstractAlembic)
 
         if tp.is_maya():
